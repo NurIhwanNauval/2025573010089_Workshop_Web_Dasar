@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --font-main: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 30px;
+
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.subscribe-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 30px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.hero img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.meta {
+  color: gray;
+}
+
+.container {
+  display: flex;
+
+  padding: 30px;
+
+  gap: 20px;
+}
+
+.content {
+  flex: 7;
+}
+
+.sidebar {
+  flex: 3;
+
+  background-color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.sidebar ul {
+  padding-left: 20px;
+}
+
+.footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  background-color: var(--primary-color);
+  color: white;
+
+  padding: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 0 10px;
+}
