@@ -1,0 +1,121 @@
+:root {
+  --primary: #2c3e50;
+  --secondary: #3498db;
+  --bg: #f5f6fa;
+  --spacing: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+}
+
+/* NAVBAR (Flexbox) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  background: var(--primary);
+  color: white;
+
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--secondary);
+  color: white;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* pseudo-element */
+.hero h1::after {
+  content: "🔥";
+}
+
+/* GRID FITUR */
+.fitur {
+  display: grid;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+/* GRID TESTIMONI */
+.testimoni {
+  display: grid;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ANIMASI */
+.hero button {
+  animation: naik 1s infinite alternate;
+}
+
+@keyframes naik {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+/* TABLET ≥768px */
+@media (min-width: 768px) {
+  .fitur {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimoni {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* DESKTOP ≥1024px */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 100px;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: var(--spacing);
+  background: var(--primary);
+  color: white;
+}
+
+/* FOOTER DESKTOP */
+@media (min-width: 768px) {
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
