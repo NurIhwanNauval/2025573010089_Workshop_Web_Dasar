@@ -1,79 +1,161 @@
-<!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Landing Page</title>
-</head>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <title>Landing Page Aplikasi</title>
 
-<!-- NAVBAR -->
-<nav class="flex justify-between items-center px-6 py-4 shadow-md bg-white dark:bg-gray-800">
-  <h2 class="text-xl font-bold">MyBrand</h2>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
 
-  <ul class="hidden md:flex gap-6">
-    <li class="hover:text-blue-500 cursor-pointer">Home</li>
-    <li class="hover:text-blue-500 cursor-pointer">Fitur</li>
-    <li class="hover:text-blue-500 cursor-pointer">Testimoni</li>
-    <li class="hover:text-blue-500 cursor-pointer">Kontak</li>
-  </ul>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <!-- NAVBAR -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-xl font-bold text-blue-500">AppDigital</div>
 
-  <!-- Toggle Dark Mode -->
-  <button onclick="toggleDark()" class="ml-4 text-sm border px-3 py-1 rounded">
-    Dark
-  </button>
-</nav>
+        <ul class="hidden md:flex gap-6 text-gray-700 dark:text-gray-200">
+          <li><a href="#" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#" class="hover:text-blue-500">Fitur</a></li>
+          <li><a href="#" class="hover:text-blue-500">Testimoni</a></li>
+          <li><a href="#" class="hover:text-blue-500">Kontak</a></li>
+        </ul>
 
-<!-- HERO -->
-<section class="text-center py-20 px-6 bg-gray-100 dark:bg-gray-800">
-  <h1 class="text-3xl md:text-5xl font-bold mb-4">
-    Produk Keren untuk Kamu
-  </h1>
-  <p class="mb-6 text-lg">
-    Solusi modern untuk kebutuhan digital
-  </p>
-  <button class="btn">Mulai Sekarang</button>
-</section>
+        <div class="flex items-center gap-3">
+          <button
+            onclick="toggleDark()"
+            class="px-3 py-2 rounded-lg bg-gray-200 dark:bg-gray-700"
+          >
+            🌙
+          </button>
 
-<!-- FITUR -->
-<section class="py-16 px-6">
-  <h2 class="section-title">Fitur</h2>
+          <button class="btn-primary">Mulai</button>
+        </div>
+      </div>
+    </nav>
 
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="card text-center">Fitur 1</div>
-    <div class="card text-center">Fitur 2</div>
-    <div class="card text-center">Fitur 3</div>
-  </div>
-</section>
+    <!-- HERO -->
+    <section class="py-16">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <span
+            class="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full mb-4"
+          >
+            Aplikasi Terbaik
+          </span>
 
-<!-- TESTIMONI -->
-<section class="py-16 px-6 bg-gray-100 dark:bg-gray-800">
-  <h2 class="section-title">Testimoni</h2>
+          <h1 class="text-3xl md:text-4xl font-bold mb-4 dark:text-white">
+            Solusi Digital Untuk Bisnis Anda
+          </h1>
 
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="card">"Bagus banget!"</div>
-    <div class="card">"Sangat membantu"</div>
-    <div class="card">"Recommended!"</div>
-  </div>
-</section>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Kelola usaha dengan mudah menggunakan aplikasi modern.
+          </p>
 
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-white py-10 px-6">
-  <div class="grid md:grid-cols-3 gap-6 text-center">
-    <div>About</div>
-    <div>Contact</div>
-    <div>Social</div>
-  </div>
-</footer>
+          <button class="btn-primary">Coba Gratis</button>
+        </div>
 
-<script>
-function toggleDark() {
-  document.documentElement.classList.toggle('dark')
-}
-</script>
+        <div>
+          <img
+            src="https://picsum.photos/500/350"
+            class="rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
 
-<script type="module" src="/src/main.js"></script>
+    <!-- FITUR -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="section-title">Fitur Unggulan</h2>
 
-</body>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card">
+            <h3 class="font-semibold mb-2 dark:text-white">Manajemen Data</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">
+              Kelola data pelanggan secara mudah dan aman.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="font-semibold mb-2 dark:text-white">Laporan Otomatis</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">
+              Laporan dibuat otomatis setiap hari.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="font-semibold mb-2 dark:text-white">Cloud Storage</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">
+              Data tersimpan aman di cloud.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="section-title">Testimoni</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card">
+            <p class="mb-3 dark:text-gray-300">
+              "Sangat membantu bisnis saya."
+            </p>
+            <strong class="dark:text-white"> - Andi </strong>
+          </div>
+
+          <div class="card">
+            <p class="mb-3 dark:text-gray-300">"Tampilan mudah digunakan."</p>
+            <strong class="dark:text-white"> - Siti </strong>
+          </div>
+
+          <div class="card">
+            <p class="mb-3 dark:text-gray-300">"Fitur lengkap dan modern."</p>
+            <strong class="dark:text-white"> - Budi </strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-bold text-lg mb-2">AppDigital</h3>
+          <p class="text-gray-400">Aplikasi modern untuk bisnis.</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-lg mb-2">Menu</h3>
+          <ul class="space-y-1 text-gray-400">
+            <li>Home</li>
+            <li>Fitur</li>
+            <li>Kontak</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-lg mb-2">Kontak</h3>
+          <p class="text-gray-400">Email: info@app.com</p>
+          <p class="text-gray-400">Telp: 08123456789</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleDark() {
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+  </body>
 </html>
