@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tugas</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <nav class="sticky top-0 bg-white dark:bg-gray-800 shadow z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="font-bold text-xl text-orange-500">Foodies</div>
+
+        <!-- Menu Desktop -->
+
+        <ul class="hidden md:flex gap-6 dark:text-white">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Testimoni</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+
+        <!-- Hamburger -->
+
+        <div class="md:hidden text-2xl">☰</div>
+
+        <!-- Dark Button -->
+
+        <button
+          id="darkBtn"
+          onclick="toggleDark()"
+          class="ml-4 px-3 py-2 bg-gray-200 dark:bg-gray-700 rounded"
+        >
+          🌙
+        </button>
+      </div>
+    </nav>
+    <section class="py-20 bg-gray-100 dark:bg-gray-900">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <h1 class="text-4xl font-bold mb-4 dark:text-white">
+            Makanan Lezat Setiap Hari
+          </h1>
+
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Nikmati hidangan terbaik dengan bahan segar.
+          </p>
+
+          <button class="btn-primary animate-bounce">Pesan Sekarang</button>
+        </div>
+
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+            class="rounded-xl shadow-lg animate-pulse"
+            alt="Interior restoran modern"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="section-title">
+          Menu Favorit
+          <div class="w-16 h-1 bg-orange-500 mx-auto mt-2"></div>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- BURGER -->
+          <div class="card overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+
+            <h3 class="font-bold text-lg dark:text-white">Burger</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">Lezat dan juicy.</p>
+          </div>
+
+          <!-- PIZZA -->
+          <div class="card overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500&auto=format&fit=crop"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+              alt="Pizza"
+            />
+
+            <h3 class="font-bold text-lg dark:text-white">Pizza</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">Keju melimpah.</p>
+          </div>
+
+          <!-- STEAK -->
+          <div class="card overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+
+            <h3 class="font-bold text-lg dark:text-white">Steak</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">Daging premium.</p>
+          </div>
+
+          <!-- SALAD -->
+          <div class="card overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+
+            <h3 class="font-bold text-lg dark:text-white">Salad</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">Sehat dan segar.</p>
+          </div>
+
+          <!-- PASTA -->
+          <div class="card overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=500&auto=format&fit=crop"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+              alt="Pasta"
+            />
+
+            <h3 class="font-bold text-lg dark:text-white">Pasta</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">Rasa autentik.</p>
+          </div>
+
+          <!-- DESSERT -->
+          <div class="card overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1551024601-bec78aea704b"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+
+            <h3 class="font-bold text-lg dark:text-white">Dessert</h3>
+
+            <p class="text-gray-600 dark:text-gray-300">Manis nikmat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="section-title">
+          Testimoni
+          <div class="w-16 h-1 bg-orange-500 mx-auto mt-2"></div>
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- ANDI -->
+
+          <div class="card flex items-center gap-4 text-left">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              class="w-16 h-16 rounded-full object-cover"
+            />
+
+            <div>
+              <p class="dark:text-gray-300">"Makanan sangat enak!"</p>
+
+              <strong class="dark:text-white"> - Andi </strong>
+            </div>
+          </div>
+
+          <!-- SITI -->
+
+          <div class="card flex items-center gap-4 text-left">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              class="w-16 h-16 rounded-full object-cover"
+            />
+
+            <div>
+              <p class="dark:text-gray-300">"Pelayanan cepat."</p>
+
+              <strong class="dark:text-white"> - Siti </strong>
+            </div>
+          </div>
+
+          <!-- BUDI -->
+
+          <div class="card flex items-center gap-4 text-left">
+            <img
+              src="https://randomuser.me/api/portraits/men/65.jpg"
+              class="w-16 h-16 rounded-full object-cover"
+            />
+
+            <div>
+              <p class="dark:text-gray-300">"Harga terjangkau."</p>
+
+              <strong class="dark:text-white"> - Budi </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="max-w-xl mx-auto px-6">
+        <h2 class="section-title">Hubungi Kami</h2>
+
+        <form class="space-y-4">
+          <input
+            type="text"
+            placeholder="Nama"
+            class="w-full p-3 border rounded"
+          />
+
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full p-3 border rounded"
+          />
+
+          <textarea
+            placeholder="Pesan"
+            class="w-full p-3 border rounded"
+          ></textarea>
+
+          <button class="btn-primary w-full">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-bold mb-2">Foodies</h3>
+          <p class="text-gray-400">Restaurant terbaik.</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-2">Menu</h3>
+          <ul class="text-gray-400">
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Kontak</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-2">Kontak</h3>
+          <p class="text-gray-400">08123456789</p>
+          <p class="text-gray-400">jl.Kemanggisan, Jakarta barat</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleDark() {
+        document.documentElement.classList.toggle("dark");
+
+        localStorage.setItem(
+          "theme",
+          document.documentElement.classList.contains("dark")
+            ? "dark"
+            : "light",
+        );
+      }
+
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+  </body>
+</html>
