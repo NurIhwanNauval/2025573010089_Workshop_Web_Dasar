@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+
+      <!-- INPUT -->
+      <div class="input-area">
+        <input type="text" id="input-tugas" placeholder="Tambah tugas..." />
+        <select id="prioritas">
+          <option value="rendah">Rendah</option>
+          <option value="sedang">Sedang</option>
+          <option value="tinggi">Tinggi</option>
+        </select>
+        <button id="btn-tambah">Tambah</button>
+      </div>
+
+      <!-- FILTER -->
+      <div class="filter">
+        <button data-filter="all">Semua</button>
+        <button data-filter="aktif">Aktif</button>
+        <button data-filter="selesai">Selesai</button>
+      </div>
+
+      <!-- LIST -->
+      <ul id="list-tugas"></ul>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <span id="counter">0 tugas tersisa</span>
+        <button id="hapus-selesai">Hapus Semua Selesai</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
